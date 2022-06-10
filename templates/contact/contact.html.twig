@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nous contacter{% endblock %}
+
+{% block content %}
+    <div id="sendMessage">
+        {{ form_start(form) }}
+            <div class="row text-center">
+                <div class="col-md-12">{{ form_row(form.message) }}</div>
+                <div class="col-md-12">{{ form_row(form.public) }}</div>
+                <div class="col-md-12">{{ form_row(form.author) }}</div>
+                <div class="col-md-12">{{ form_row(form.submit) }}</div>
+            <div>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

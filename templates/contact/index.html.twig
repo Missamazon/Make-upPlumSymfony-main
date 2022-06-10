@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nous contacter{% endblock %}
+
+{% block content %}
+{# <p> Il n'y a pas de message. </p> #}
+<div class="d-grid gap-2 col-6 mx-auto">
+    <a href="{{ path('FAQ') }}"><button class="btn btn-light" type="button">
+        Foire aux questions
+    </button></a>
+    <a href="{{ path('myMessages') }}"><button class="btn btn-light" type="button">
+        Mes messages
+    </button></a>
+    <a href="{{ path('sendMessage') }}"><button class="btn btn-light" type="button">
+        Envoyer un message
+    </button></a>
+</div>
+{% endblock %}

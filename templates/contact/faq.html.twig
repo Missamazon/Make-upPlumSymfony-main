@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nous contacter{% endblock %}
+
+{% block content %}
+    <table class="table table-hover table-light">
+        <thead>
+            <tr>
+            <th scope="col">Message</th>
+            <th scope="col">Réponse</th>
+            </tr>
+        </thead>
+    {% for m in faq %}
+        <tbody>
+            <tr>
+                <td>{{ m.message }}</td>
+                <td>{{ m.answer }}</td>
+            </tr>
+        </tbody>
+    {% endfor %}
+    </table>
+{% endblock %}
