@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
 body {
     position: relative;
-    /* background: radial-gradient(circle, rgba(212,162,11,1) 0%, rgba(212,25,17,1) 44%, #ffb0bd 100%); */
+    font-family: 'Quintessential', cursive;
+    background-color: #ffc0cbac;
 }
 
 main {

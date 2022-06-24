@@ -3,26 +3,24 @@
 {% block title %}Nos produits - Make-up Plum{% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-md-4">
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-md-12">
             <h3>Filtrer</h3>
             {{ form(form) }}
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-8 col-md-12">
             <h3>Nos produits</h3>
-            <div class="row product-container">
+            <div class="row product-container mx-auto">
                 {% for product in products %}
-                <div class="col-md-4 h-100"> 
-                    <div class="product-item text-center">
-                        <div class="card border-dark">
-                            <div class="card-header">
-                                <a href="{{ path('product', { 'slug' : product.slug }) }}"><img src="/uploads/{{ product.illustration }} " alt="{{ product.name }}" class="img-fluid"></a>
-                            </div>
-                            <div class="card-body text-dark">
-                                <h5 class="card-title">{{ product.name }}</h5>
-                                <span class="product-subtitle"> {{ product.subtitle }} </span>
-                                <span class="product-price"> {{ (product.price/100)|number_format(2, ',', '.') }} €</span>
-                            </div>
+                <div class="col-lg-3 m-1 col-md-5 m-1"> 
+                    <div class="product-item text-center card border-dark h-100">
+                        <div class="card-header">
+                            <a href="{{ path('product', { 'slug' : product.slug }) }}"><img src="/uploads/{{ product.illustration }} " alt="{{ product.name }}" class="img-fluid"></a>
+                        </div>
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <span class="product-subtitle"> {{ product.subtitle }} </span>
+                            <span class="product-price"> {{ (product.price/100)|number_format(2, ',', '.') }} €</span>
                         </div>
                     </div>
                 </div>
