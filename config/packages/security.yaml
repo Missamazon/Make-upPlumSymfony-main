@@ -38,8 +38,8 @@ security:
 
                 # where to redirect after logout
                 target: app_home
-            custom_authenticator: App\Security\LoginAuthenticator
-            entry_point: App\Security\LoginAuthenticator
+            # custom_authenticator: App\Security\LoginAuthenticator
+            # entry_point: App\Security\LoginAuthenticator
 
             # protection against force brut attack
             # configure the maximum login attempts in a custom period of time
