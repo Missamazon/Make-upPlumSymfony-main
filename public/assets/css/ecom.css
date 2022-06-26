@@ -10,6 +10,14 @@ main {
     margin: 5px 15px;
 }
 
+.my_account {
+    color:#aa2ba1;
+}
+
+.my_account:hover {
+    color:#ee79e6;
+}
+
 .navbar-item-custom, .navbar-item-custom a {
     color: white;
 }

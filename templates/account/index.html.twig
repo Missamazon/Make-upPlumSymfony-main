@@ -3,10 +3,13 @@
 {% block title %}Mon compte _ Ecom{% endblock %}
 
 {% block content %}
-    <h1>Mon Compte</h1>
-    Bienvenue {{ app.user.firstname }} dans votre compte. C'est dans cet espace que vous pourrez gérer vos informations.
-    <hr>
-    <a href="{{ path("account_password") }}"> Modifier mon mot de passe </a> <br>
-    <a href="{{ path("account_adress") }}"> Gérer mes adresses </a> <br>
-    - Mes Commandes <br>
+    <div class="row">
+        <div class="row-cols-8 mx-auto text-center">
+            <h1>Mon Compte</h1>
+            Bienvenue {{ app.user.firstname }} dans votre compte. C'est dans cet espace que vous pourrez gérer vos informations.
+            <hr>
+            <button type="button" class="btn btn-light p-2 mt-1"><a href="{{ path("account_password") }}" class="my_account"> Modifier mon mot de passe </a></button> <br>
+            <button type="button" class="btn btn-light p-2 mt-1"><a href="{{ path("account_adress") }}" class="my_account"> Gérer mes adresses </a> </button>
+        </div>
+    </div>
 {% endblock %}
